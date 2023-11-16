@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <form class="container">
+<div class="input-box">
+    <input type="text" name="text">
+</div>
+<div class="button-section">
+    <div class="first-row all">
+        <input type="button" class="same-color" value="AC" onclick="text.value = '' ">
+        <input type="button" class="same-color" value="DEL" onclick="text.value =' ' ">
+        <input type="button" class="same-color" value="%" onclick="text.value += '%' ">
+        <input type="button" class="same-color" value="/" onclick="text.value += '/' ">
+    </div> 
+    <div class="second-row all">
+        <input type="button" class="normal" value="7" onclick="text.value += '7' ">
+        <input type="button" class="normal " value="8" onclick="text.value += '8' ">
+        <input type="button" class="normal " value="9" onclick="text.value += '9' ">
+        <input type="button" class="same-color" value="*" onclick="text.value += '*' ">
+        <!-- <button></button> -->
+    </div>
+     <div class="third-row all">
+        <input type="button" class="normal " value="4" onclick="text.value += '4' ">
+        <input type="button" class="normal " value="5" onclick="text.value += '5' ">
+        <input type="button" class="normal " value="6" onclick="text.value += '6' ">
+        <input type="button" class="same-color" value="-" onclick="text.value += '-' ">
+        <!-- <button></button> -->
+    </div>
+     <div class="four-row all">
+        <input type="button" class="normal " value="1" onclick="text.value += '1' ">
+        <input type="button" class="normal " value="2" onclick="text.value += '2' ">
+        <input type="button" class="normal " value="3" onclick="text.value += '3' ">
+        <input type="button" class="same-color" value="+" onclick="text.value += '+' ">
+        <!-- <button></button> -->
+    </div>
+    <div class="four-row all">
+        <input type="button" class="normal" value="00" onclick="text.value += '00' ">
+        <input type="button" class="normal" value="0" onclick="text.value += '0' ">
+        <input type="button" class="normal"  value="." onclick="text.value += '.' ">
+        <input type="button" class="same-color" value="=" onclick="text.value =eval(text.value) ">
+        <!-- <button></button> -->
+    </div>
+</div>
+</form>
+</body>
+</html>
